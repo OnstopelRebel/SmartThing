@@ -22,7 +22,7 @@ export default {
   },
 
   fonter: {
-    formats: ["ttf", "woff", "eot", "svg"]
+    formats: ["woff"]
   },
 
   svgmin: {
