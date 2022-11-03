@@ -1,6 +1,10 @@
 header.page-header
-  div.logo
-    a.logo__link: img.logo__img(src="img/logo.svg", alt="Логотип компании", width="215", height="55")
+  .container
+    include ./logo
+    a.page-header__email(href="mailto:#") info@sd.ru
+    a.page-header__phone(href="tel:+74950005252") +7 (495) 000 52 52
+    include ./callback-btn
+
 
 
 

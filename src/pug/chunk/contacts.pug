@@ -1,0 +1,26 @@
+-
+  let phoneNumb = [
+    {
+      phone: '+7 (495) 589-40-50',
+      link: '84955894050'
+    },
+    {
+      phone: '+7 (925) 389-58-29',
+      link: '89253895829'
+    },
+    {
+      phone: '+7 (925) 364-78-13',
+      link: '89253647813'
+    },
+  ]
+
+article.contacts
+  h2.visually-hidden Контакты
+  .contacts__wrapper
+    h3.contacts__title Наш офис
+    address
+      span.contacts__address г. Мытищи, Олимпийский проспект, д.10
+      .contacts__phones
+        each phone in phoneNumb
+          a.contacts__phone-link(href=phone.link) #{phone.phone}
+

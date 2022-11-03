@@ -1,0 +1,39 @@
+-
+  let items = [
+    {
+      title: 'О Компаниии',
+      href: '#'
+    },
+    {
+      title: 'Продукты',
+      href: '#'
+    },
+    {
+      title: 'Производство печатных плат',
+      href: '#'
+    },
+    {
+      title: 'Монтаж печатных плат',
+      href: '#'
+    },
+    {
+      title: 'Комплектующие',
+      href: '#'
+    },
+    {
+      title: 'Доставка',
+      href: '#'
+    },
+    {
+      title: 'Контакты',
+      href: '#'
+    }
+  ]
+
+nav.navigation
+  h2.navigation__title Разделы сайта
+  ul.navigation__list
+    each item in items
+      li.navigation__item
+        a(href=item.href).navigation__link #{item.title}
+

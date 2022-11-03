@@ -1,0 +1,22 @@
+-
+  let socials = [
+    {
+      href: '#', span: 'Одноклассники', svg: 'img/sprite_auto.svg#ok-icon', viewbox: '0 0 30 30', width: '30', height: '30'
+    },
+    {
+      href: '#', span: 'Вконтакте', svg: 'img/sprite_auto.svg#vk-icon', viewbox: '0 0 30 30', width: '30', height: '30'
+    },
+    {
+      href: '#', span: 'Pinterest', svg: 'img/sprite_auto.svg#pinterest-icon', viewbox: '0 0 30 30', width: '30', height: '30'
+    }
+  ]
+
+article.social
+  h2.visually-hidden Мы вопросы социальных сетях
+  ul.social__list
+    each social in socials
+      li.social__item
+        a(href=social.href).social__link
+          span.visually-hidden #{social.span}
+          svg(aria-hidden='true', focusable='false', viewBox=social.viewbox, width=social.width, height=social.height).social__icon
+            use(xlink:href=social.svg)
