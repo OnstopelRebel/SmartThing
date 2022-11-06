@@ -6,32 +6,24 @@
 
 // Fonts
 
-@mixin montserrat-400($font-size: 16px, $line-height: 24px) {
-  font-family: "Montserrat", "Arial", sans-serif;
+@mixin pt-mono-400($font-size: 16px, $line-height: 24px) {
+  font-family: "PT-mono", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
 }
 
-@mixin montserrat-500($font-size: 16px, $line-height: 19px) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 500;
+@mixin roboto-condensed-400($font-size: 16px, $line-height: 19px) {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
 }
 
-@mixin montserrat-600($font-size: 28px, $line-height: 42px) {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-@mixin montserrat-700($font-size: 54px, $line-height: 66px) {
-  font-family: "Montserrat", "Arial", sans-serif;
+@mixin roboto-condensed-700($font-size: 80px, $line-height: 93.75px) {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: $font-size;
