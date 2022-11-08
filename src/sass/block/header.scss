@@ -1,0 +1,47 @@
+.page-header {
+  background-color: $color-blue;
+  padding: 35px 0 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__email {
+  @include pt-mono-400(16px, 18px);
+  position: relative;
+  color: $color-white;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -35px;
+  }
+}
+
+.page-header__phone {
+  @include pt-mono-400(16px, 18px);
+  position: relative;
+  color: $color-white;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -35px;
+  }
+}

@@ -1,0 +1,9 @@
+.callback-btn {
+  @include roboto-condensed-700(14px, 16px);
+  padding: 10px 15px;
+  color: $color-white;
+  letter-spacing: 0.05em;
+  border: 1px solid $color-white;
+  border-radius: 3px;
+  text-align: center;
+}
