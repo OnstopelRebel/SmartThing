@@ -1,9 +1,26 @@
-- let titles = ['Производство печатных плат', 'Монтаж печатных плат', 'Комплектующие для светотехники']
-- let href = '#'
+-
+  let cards = [
+    {
+      title: 'Производство печатных плат',
+      href: '#',
+      class: 'service-card__production'
+    },
+    {
+      title: 'Монтаж печатных плат',
+      href: '#',
+      class: 'service-card__montage'
+    },
+    {
+      title: 'Комплектующие для светотехники',
+      href: '#',
+      class: 'service-card__components'
+    }
+  ]
 
 section.services
-  h2.services__title Smart Device предлагает следующие товары и услуги
-  ul.services__list
-    each title in titles
-      li.services__item
-        include service-card
+  .container
+    h2.services__title Smart Device предлагает следующие товары и услуги
+    ul.services__list
+      each card in cards
+        li.services__item
+          include service-card

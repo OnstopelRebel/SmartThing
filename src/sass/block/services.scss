@@ -1,0 +1,16 @@
+.services {
+  background: $color-dark-blue;
+  padding: 70px 0 140px;
+}
+
+.services__title {
+  @include roboto-condensed-400(36px, 51px);
+  color: white;
+  padding-bottom: 50px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 85px;
+}

@@ -3,10 +3,17 @@ $base-font-size: 28px;
 // Colors
 
 $color-white:            #F2F5F6;
-$color-blue:             #011C40;
+$color-dark-blue:        #041827;
+$color-dark-blue-2:        #041427;
+$color-light-blue:       #00B2FF;
+$color-light-blue-2:     #00B3FF;
+$color-white-gradient:   rgba(255, 255, 255, 0);
+$color-gray-border:      #EBEBEB;
+$color-form-input:       rgba(4, 20, 39, 0.15);
 $spare-background:       cornflowerblue;
 $overlay-background:     rgba(0, 43, 102, 0.5);
 $advantages-active:      #F2F5F5;
+$header-gradient:        180deg, $color-dark-blue 84.89%, $color-dark-blue 84.9%, rgba(4, 24, 39, 0) 100%;
 
 // Viewports
 

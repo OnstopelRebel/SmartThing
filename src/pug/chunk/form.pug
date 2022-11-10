@@ -1,13 +1,13 @@
 form.form
   label(for='name').visually-hidden Имя
-  input(id='name', type='text', name='name', placeholder='Имя', required).form__label.form__name
+  input(id='name', type='text', name='name', placeholder='Имя', required).form__input.form__name
   label(for='phone').visually-hidden Телефон
-  input(id='phone', type='number', name='phone', placeholder='Телефон', required).form__label.form__phone
+  input(id='phone', type='number', name='phone', placeholder='Телефон', required).form__input.form__phone
   label(for='question').visually-hidden Задать вопросы
   textarea(id='question', name='question', placeholder='Ваш вопрос').form__question
   button(type='submit').form__button Задать вопрос
-  label
-    input(type="checkbox", name="agreement", value="yes", required, checked).visually-hidden
+  label.form__checkbox
+    input(type="checkbox", name="agreement", value="yes", required, checked).visually-hidden.form__checkbox-input
     span.form__control-mark
     span.form__control-label Я согласен на обработку персональных данных
 

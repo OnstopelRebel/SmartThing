@@ -1,0 +1,65 @@
+.form__input {
+  background: $color-form-input;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+
+  &::placeholder {
+    @include pt-mono-400(16px, 22px);
+    color: white;
+  }
+}
+
+.form__question {
+  background: $color-form-input;
+  border: none;
+  border-radius: 3px;
+  padding: 25px 15px;
+
+  &::placeholder {
+    @include pt-mono-400(16px, 22px);
+    color: white;
+  }
+}
+
+.form__button {
+  @include roboto-condensed-700(16px, 19px);
+  color: white;
+  letter-spacing: 0.05em;
+  padding: 15px 70px;
+  background: $color-dark-blue-2;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox-input:checked + .form__control-mark {
+  &:before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    transform: rotate(-45deg) translateY(-100%);
+    top: 50%;
+    left: 40%;
+  }
+}
+
+.form__control-mark {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+}
+
+.form__control-label {
+  @include pt-mono-400(14px, 16px);
+  color: white;
+  padding-left: 10px;
+}

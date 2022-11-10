@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  padding-bottom: 120px;
+}
+
+.about__year {
+  width: 100%;
+  min-height: 320px;
+  background: url("../img/text-background-img.jpg") no-repeat center;
+}
+
+.about__title {
+  @include roboto-condensed-400(36px, 51px);
+  color: $color-dark-blue;
+}
+
+.about__text {
+  @include pt-mono-400(16px, 22px);
+  color: $color-dark-blue;
+  padding: 15px 0 30px;
+}
+
+.about__button {
+  @include roboto-condensed-700(14px, 16px);
+  color: $color-light-blue;
+  letter-spacing: 0.05em;
+  background: inherit;
+  padding: 10px 48px 10px;
+  border: 1px solid $color-light-blue;
+  border-radius: 3px;
+}

@@ -1,0 +1,15 @@
+.feedback {
+  padding: 170px 0 250px;
+  background-color: $color-light-blue-2;
+}
+
+.feedback__title {
+  @include roboto-condensed-400(36px, 51px);
+  color: white;
+}
+
+.feedback__sub-title {
+  @include pt-mono-400(16px, 22px);
+  color: white;
+  padding: 15px 0 35px;
+}

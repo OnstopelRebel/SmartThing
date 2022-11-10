@@ -1,9 +1,10 @@
 .page-header {
-  background-color: $color-blue;
-  padding: 35px 0 60px;
+  background: linear-gradient($header-gradient);
+  padding: 35px 0 55px;
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 .page-header__wrapper {
