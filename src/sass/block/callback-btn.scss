@@ -6,4 +6,8 @@
   border: 1px solid $color-white;
   border-radius: 3px;
   text-align: center;
+
+  @include tablet {
+    display: none;
+  }
 }

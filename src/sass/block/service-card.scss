@@ -4,14 +4,30 @@
 
   &.service-card__production {
     background: url("../img/background-service-card-1.jpg") no-repeat center/cover;
+
+    @include tablet {
+      background: url("../img/background-service-card-1-tablet.jpg") no-repeat center/cover;
+    }
   }
 
   &.service-card__montage {
     background: url("../img/background-service-card-2.jpg") no-repeat center/cover;
+
+    @include tablet {
+      background: url("../img/background-service-card-2-tablet.jpg") no-repeat center/cover;
+    }
   }
 
   &.service-card__components {
     background: url("../img/background-service-card-3.jpg") no-repeat center/cover;
+
+    @include tablet {
+      background: url("../img/background-service-card-3-tablet.jpg") no-repeat center/cover;
+    }
+  }
+
+  @include tablet {
+    height: 250px;
   }
 
   &:before {
