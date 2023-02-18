@@ -1,4 +1,9 @@
 .feedback__container {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+
+  @include tablet {
+    display: block;
+  }
 }

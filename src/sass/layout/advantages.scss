@@ -1,0 +1,30 @@
+.advantages {
+  padding: 120px 0;
+
+  @include tablet {
+    padding: 50px 0;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.advantages__item {
+  padding: 40px 45px;
+
+  @include mobile {
+    padding: 30px 30px 35px;
+  }
+}
+
+.advantages__title {
+  padding: 20px 0 15px;
+}

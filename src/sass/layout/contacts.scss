@@ -1,0 +1,7 @@
+.contacts {
+  grid-row: 1/2;
+
+  @include tablet {
+    grid-row: 2/3;
+  }
+}

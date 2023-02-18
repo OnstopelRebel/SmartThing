@@ -1,27 +1,32 @@
-.advantages {
-  padding: 120px 0;
-}
-
-.advantages__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-}
-
 .advantages__item {
-  padding: 40px 45px;
   border: 1px solid $color-gray-border;
   border-left: 5px solid $color-light-blue;
+  min-height: 300px;
+
+  @include tablet {
+    min-height: 360px;
+  }
+
+  @include mobile {
+    min-height: 325px;
+  }
 }
 
 .advantages__title {
-  @include roboto-condensed-400(24px, 33.6px);
+  @include roboto-condensed-400(24px, 34px);
   color: $color-light-blue;
-  padding: 20px 0 15px;
+
+  @include mobile {
+    @include roboto-condensed-400(20px, 34px);
+  }
 }
 
 .advantages__text {
   @include pt-mono-400(16px, 21.6px);
   color: $color-dark-blue;
   max-width: 505px;
+
+  @include mobile {
+    @include pt-mono-400(14px, 19px);
+  }
 }

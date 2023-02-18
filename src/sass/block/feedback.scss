@@ -2,6 +2,12 @@
   padding: 170px 0 250px;
   background-image: url("../img/airplane-background-img.png") no-repeat 25% 50%,
   linear-gradient(139deg, $color-blue-gradient 34%, $color-light-blue-2 34%) ;
+
+  @include tablet {
+    padding: 50px 0 125px;
+    background-image: none;
+    background-color: $color-light-blue-2;
+  }
 }
 
 .feedback__title {
@@ -13,4 +19,8 @@
   @include pt-mono-400(16px, 22px);
   color: white;
   padding: 15px 0 35px;
+
+  @include tablet {
+    padding: 10px 0 25px;
+  }
 }
